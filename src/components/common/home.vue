@@ -1,26 +1,26 @@
 <template>
   <div>
-    <div class="header">新闻后台管理系统</div>
+    <div class="header">新闻管理系统</div>
     <el-row>
       <el-col :span="3">
         <el-menu
-          default-active="2"
+          default-active="dashboard"
           class="el-menu-vertical-demo menu"
           background-color="#324157"
           text-color="#fff"
           active-text-color="#ffd04b"
           router
         >
-          <el-menu-item index="helloworld">
+          <el-menu-item index="dashboard">
             <i class="el-icon-s-platform"></i>
             <span slot="title">Dashboard</span>
           </el-menu-item>
-          <el-submenu index="second">
+          <el-submenu index="news">
             <template slot="title">
               <i class="el-icon-location"></i>
               <span>Posts</span>
             </template>
-            <el-menu-item index="second">All Posts</el-menu-item>
+            <el-menu-item index="news">All Posts</el-menu-item>
           </el-submenu>
         </el-menu>
       </el-col>
